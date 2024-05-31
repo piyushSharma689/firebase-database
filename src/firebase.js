@@ -9,13 +9,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAq0gkdWqbvFws-VDF6ubl2ruBKVL9u9YE",
+  apiKey: import.meta.env.VITE_FIREBASE_API ,
   authDomain: "fire-database-app-fdf74.firebaseapp.com",
   projectId: "fire-database-app-fdf74",
   storageBucket: "fire-database-app-fdf74.appspot.com",
   messagingSenderId: "244436958130",
   appId: "1:244436958130:web:931833ead91a0704e802ab",
-  databaseURL : "https://fire-database-app-fdf74-default-rtdb.firebaseio.com"
+  databaseURL : import.meta.env.VITE_DATABASE_URL
 };
 
 // Initialize Firebase

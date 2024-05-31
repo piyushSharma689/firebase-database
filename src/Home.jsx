@@ -5,6 +5,7 @@ import { collection, addDoc, getDocs, doc,getDoc , query, where} from 'firebase/
 import { db } from './firebase'
 import Card from './Card'
 
+
 function Home() {
     const [details, setdetails] = useState({})
     const [search, setsearch]= useState('');
@@ -38,7 +39,7 @@ function Home() {
         }catch(e){
             console.log(e);
         }
-
+        
     }
 
 
